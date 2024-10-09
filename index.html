@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piano di Allenamento</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="table-title">Piano di Allenamento</h1>
+    
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>Giorno 1</th>
+            <th>Giorno 2</th>
+            <th>Giorno 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Riscaldamento articolare</td>
+            <td>Riscaldamento articolare</td>
+            <td>Riscaldamento articolare</td>
+          </tr>
+          <tr>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video2">Croci panca alta 45° 4x8</a></td>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video3">Trazioni 4xMax</a></td>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video4">Squat 5x8</a></td>
+          </tr>
+          <tr>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video5">Spinte panca alta 45° 4x8</a></td>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video6">Rematore bilanciere inverso 4x8</a></td>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video7">Stacchi manubrio gamba singola 4x8</a></td>
+          </tr>
+          <tr>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video8">Spinte panca piana 4x8</a></td>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video9">Rematore manubri panca 45° 4x8</a></td>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video10">Squat piedi uniti 4x8</a></td>
+          </tr>
+          <tr>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video11">Piegamenti a terra 4xMax</a></td>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video12">Pullover manubrio 4x12</a></td>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video13">Leg curl manubrio steso 4xMax</a></td>
+          </tr>
+          <tr>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video14">Tricipiti bilanciere panca 4x8</a></td>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video15">Bicipiti bilanciere 4x8</a></td>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video16">Spinte su testa panca 80° 4x8</a></td>
+          </tr>
+          <tr>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video17">Tricipiti manubrio singolo dietro la testa 4x8</a></td>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video18">Bicipiti manubrio martello 4x8</a></td>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video19">Alzate laterali 5x10</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video20">Bicipiti manubrio panca 45° 3x12</a></td>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video21">Military press bilanciere 4x8</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#video22">Alzate 90° 4x10</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="recovery-info">
+        <p>RECUPERO TRA ESERCIZI 3 MINUTI<br>RECUPERO TRA SERIE 1:30 MINUTI</p>
+        
+        <div class="d-flex justify-content-center gap-3">
+          <button class="btn btn-primary" onclick="startTimer(180)">Avvia Timer Recupero tra esercizi (3')</button>
+          <button class="btn btn-secondary" onclick="startTimer(90)">Avvia Timer Recupero tra serie (1'30")</button>
+        </div>
+      
+        <div id="timer-display" class="text-center mt-3" style="font-size: 1.5rem;"></div>
+      </div>
+      
+
+    <div class="abs-info">
+      <p>ADDOMINALI 2 VOLTE A SETTIMANA<br>6 SERIE AL GIORNO DA 15 RIPETIZIONI</p>
+    </div>
+  </div>
+
+  <!--popup-->
+  <div class="modal fade" id="video2" tabindex="-1" aria-labelledby="video2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video2Label">Croci panca alta 45°</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/incroci panca alta 45°.jpg" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="video3" tabindex="-1" aria-labelledby="video3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video3Label">Trazioni</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/trazioni.gif" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="video4" tabindex="-1" aria-labelledby="video4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video4Label">Squat</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/squat.gif" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="video5" tabindex="-1" aria-labelledby="video5Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video5Label">Spinte panca alta 45°</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/spinte panca alta 45°.jpg" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="video6" tabindex="-1" aria-labelledby="video6Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video6Label">Rematore bilanciere inverso</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/rematore-con-bilanciere-inverso.jpg" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="video7" tabindex="-1" aria-labelledby="video7Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video7Label">Stacchi manubrio gamba singola</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/stacchi manubrio gamba singola.jpg" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="video8" tabindex="-1" aria-labelledby="video8Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video8Label">Spinte panca piana</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/spinte panca piana.gif" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="video9" tabindex="-1" aria-labelledby="video9Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video9Label">Rematore manubri panca 45°</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/rematore-a-un-braccio-con-manubrio-su-panca-piana.jpg" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="video10" tabindex="-1" aria-labelledby="video10Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video10Label">Squat piedi uniti</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="video11" tabindex="-1" aria-labelledby="video11Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video11Label">Piegamenti a terra</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/Piegamenti a terra.jpeg" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="video12" tabindex="-1" aria-labelledby="video12Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video12Label">Pullover manubrio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/Dumbbell-Pullover.gif" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="video13" tabindex="-1" aria-labelledby="video13Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video13Label">Leg curl manubrio steso</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/leg curl manubrio steso.png" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="video14" tabindex="-1" aria-labelledby="video14Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video14Label">Tricipiti bilanciere panca</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/tricipiti panca bilanciere.png" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="video15" tabindex="-1" aria-labelledby="video15Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video15Label">Bicipiti bilanciere</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/bicipiti bilanciere.jpg" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="video16" tabindex="-1" aria-labelledby="video16Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video16Label">Spinte su testa panca 80°</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/spinte su testa panca 80.jpg" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="video17" tabindex="-1" aria-labelledby="video17Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video17Label">Tricipiti manubrio singolo dietro la testa</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/estensioni-dei-tricipiti-con-manubrio-a-due-braccia-da-seduti.jpg" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="video18" tabindex="-1" aria-labelledby="video18Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video18Label">Bicipiti manubrio martello</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="video19" tabindex="-1" aria-labelledby="video19Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video19Label">Alzate laterali</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/alzate-laterali-con-manubri.jpg" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="video20" tabindex="-1" aria-labelledby="video20Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video20Label">Bicipiti manubrio panca 45°</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/curl-manubri-panca-inclinata.jpg" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="video21" tabindex="-1" aria-labelledby="video21Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video21Label">Military press bilanciere</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/push-press.webp" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="video22" tabindex="-1" aria-labelledby="video22Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="video22Label">Alzate 90°</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="./img/alzate-laterali-seduto-busto-90-bg.png" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
