@@ -19,4 +19,7 @@ body {
     .table-title {
       font-size: 1.2rem;
     }
+    .d-flex {
+      flex-direction: column;
+    }
   }
